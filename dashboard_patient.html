@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Patient Dashboard{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-md-4">
+    <div class="card shadow-sm">
+      <div class="card-body text-center">
+        {% if user.profile_image %}
+          <img class="img-fluid rounded mb-3" style="max-height:220px"
+               src="{{ url_for('uploaded_file', filename=user.profile_image) }}" alt="profile">
+        {% else %}
+          <div class="text-muted mb-3">No profile image</div>
+        {% endif %}
+        <h5>{{ user.first_name }} {{ user.last_name }}</h5>
+        <span class="badge bg-success">Patient</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h4 class="mb-3">Your Details</h4>
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Username:</strong> {{ user.username }}</li>
+          <li class="list-group-item"><strong>Email:</strong> {{ user.email }}</li>
+          <li class="list-group-item"><strong>Address:</strong> {{ user.address_line1 }}, {{ user.city }}, {{ user.state }} - {{ user.pincode }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
