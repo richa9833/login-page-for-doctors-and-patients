@@ -40,21 +40,22 @@ The project demonstrates **user authentication**, **role management**, and **das
 - **Flask-Migrate**
 - **SQLite (default database)**
 
+
 doctor-patient-portal/
-│── app.py                # Main Flask app
-│── models.py             # Database models (User, db)
-│── forms.py              # Flask-WTF forms
-│── templates/            # HTML templates
-│   ├── base.html
-│   ├── index.html
-│   ├── login.html
-│   ├── signup.html
-│   ├── doctor_dashboard.html
-│   └── patient_dashboard.html
-│── static/               # CSS, JS, Images
-│── migrations/           # Flask-Migrate files
-│── requirements.txt      # Python dependencies
-│── README.md             # Project documentation
+│── app.py # Main Flask app
+│── models.py # Database models (User, db)
+│── forms.py # Flask-WTF forms
+│── templates/ # HTML templates
+│ ├── base.html
+│ ├── index.html
+│ ├── login.html
+│ ├── signup.html
+│ ├── doctor_dashboard.html
+│ └── patient_dashboard.html
+│── static/ # CSS, JS, Images
+│── migrations/ # Flask-Migrate files
+│── requirements.txt # Python dependencies
+│── README.md # Project documentation
 
 
 
