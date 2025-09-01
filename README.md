@@ -40,8 +40,6 @@ The project demonstrates **user authentication**, **role management**, and **das
 - **Flask-Migrate**
 - **SQLite (default database)**
 
-  ## Project Structure
-
 doctor-patient-portal/
 │── app.py                # Main Flask app
 │── models.py             # Database models (User, db)
